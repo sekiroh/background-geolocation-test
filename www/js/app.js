@@ -56,7 +56,7 @@
         };
 
         var config = { desiredAccuracy: 100,
-                       stationaryRadius: 1,
+                       stationaryRadius: 30,
                        distanceFilter: 1,
                        interval: 10*1000,
                        stopOnTerminate: false,
