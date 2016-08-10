@@ -65,13 +65,20 @@
 
         backgroundGeolocation.configure(callback, failure, config);
 
-        // Have to wait a bit before starting, else it throws an init problem
-        setTimeout(function() {
-          backgroundGeolocation.start(
-            function() { console.log('Start successful'); },
-            function() { console.log('Start failed');
-                         $this.isRunning = false; }
-          );}, 1000);
+        // This works
+        // setTimeout(function() {
+        //   backgroundGeolocation.start(
+        //     function() { console.log('Start successful'); },
+        //     function() { console.log('Start failed');
+        //                  $this.isRunning = false; }
+        //   );}, 1000);
+
+        // Sometimes, this doesn't work
+        backgroundGeolocation.start(
+          function() { console.log('Start successful'); },
+          function() { console.log('Start failed');
+                       $this.isRunning = false; }
+        );
       };
 
       $this.stopGps = function() {
