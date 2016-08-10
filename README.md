@@ -1,3 +1,9 @@
+# Installation
+```sh
+npm install cordova
+cordova prepare
+```
+
 # Failed
 
 Fail to do backgroundGeolocation.start just after
