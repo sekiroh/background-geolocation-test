@@ -18,7 +18,9 @@
   "cordovaPlugins": [
     "cordova-plugin-mauron85-background-geolocation",
     "ionic-plugin-keyboard",
-    "cordova-plugin-statusbar"
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": [
     "android"
