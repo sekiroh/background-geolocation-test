@@ -38,7 +38,7 @@
                       ng-click="ctrl.stopGps()">
               </button>
           </div>
-          <div ng-repeat="location in ctrl.locations track by location.time | orderBy:'-time'">
+          <div ng-repeat="location in ctrl.locations | orderBy:'-time' track by location.time">
               <p>{{location | json}}</p>
           </div>
       </ion-content>
