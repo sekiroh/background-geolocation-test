@@ -38,8 +38,11 @@
                       ng-click="ctrl.stopGps()">
               </button>
           </div>
+          <div>Location from cordova-plugin-geolocation: {{ ctrl.time | date:"yyyy-MM-dd'T'HH:mm:ss Z" }}</div>
+          <hr>
           <div ng-repeat="location in ctrl.locations | orderBy:'-time' track by location.time">
-              <p>{{location | json}}</p>
+              <p>{{location.time|date:"yyyy-MM-dd'T'HH:mm:ss Z"}} {{location.localtime|date:"yyyy-MM-dd'T'HH:mm:ss Z"}} {{location.latitude}} {{location.longitude}}</p>
+              <hr>
           </div>
       </ion-content>
     </ion-pane>
