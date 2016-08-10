@@ -5,7 +5,7 @@ backgroundGeolocation.configure.
 
 ## Problem
 
-Need to call backgroundGeolocation.start inside a 1000 timeout.
+Need to call backgroundGeolocation.start inside a 1000 timeout. See [lines of code](https://github.com/sekiroh/background-geolocation-test/blob/failedconfigure/www/js/app.js#L68-L82)
 
 ## Log results:
 
